@@ -19,7 +19,7 @@ And now let's understand the things more  .
 Here we can see that this cipher is crypted with Cryptocode library
 
 Let's look if we have this lib on python  : 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/crypto1.png)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/crypto1.png)
 
 Well , after reading the doc of this lib , I realize that there is a function called : `cryptocode.decrypt(cipher , key)`
 this function take 2 arguments , first argument take the cipher and the key of the decryption .
@@ -44,7 +44,7 @@ print(decrypt())
 ```
 
 after we run it , we get the flag : 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/crypto2.png)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/crypto2.png)
 
 Flag : `BDSEC{cryp70_and_pyth0n_ar3_aw3s0me`
 
