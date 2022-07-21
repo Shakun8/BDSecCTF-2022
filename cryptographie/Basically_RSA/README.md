@@ -27,7 +27,7 @@ Cool , let's jump to it .
 
 > First , we need factor the N , we can use factordb.com for that : 
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/crypto3.png)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/crypto3.png)
 
 Cool , now we have q and the p , which can help us to create phi and inverse it to get the d which is the public key .
 let's put this in our code : 
@@ -78,7 +78,7 @@ d = pow(e, -1, phi)
 flag = pow(ct,d,n)
 print(long_to_bytes(flag))
 ```
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/crypto4.png)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/crypto4.png)
 
 flag = `BDSEC{r54_i5_fUn_r16h7?}`
 
