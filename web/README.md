@@ -81,7 +81,7 @@ And now let's use this paylaod : `
 
 damn , `id` command is executed , now let's see what's files are in this directory with `ls -la`
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/burp2.JPG)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/burp2.JPG)
 
 > as we can see , we have flag file , let's read it with `cat flag`
 > ![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/burp3.JPG)
