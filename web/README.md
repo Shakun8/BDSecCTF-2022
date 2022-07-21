@@ -6,7 +6,7 @@ Hello Welcome to My write up about this box that i've been played on BDsec CTF 2
 
 > First of all , let's take a view about the web page !!
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/view.JPG)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/view.JPG)
 And now let's take a look at the source code that they give us :
 ```python
 from flask import *
@@ -54,7 +54,7 @@ Cool , now let's HACK xD .
 
 Let's write something in the paramater of name.
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/2.JPG)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/2.JPG)
 
 > as u can see whatever we write is printed out , it's like a variable that we can get the input and we print it .
 > since we have this , what comes to my mind is SSTI exploit , we can put some payload to exec some commands and stuff. 
@@ -63,7 +63,7 @@ Let's write something in the paramater of name.
 
 First i Tested this payload to see if it can be work : `{{7*7}}`
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/3.JPG)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/3.JPG)
 
 And COOL , as we can see it worked , now let's intercept this request to burpsuite
 
@@ -77,14 +77,14 @@ And now let's use this paylaod : `
 
 > Let's encode it with url encode and paste it in the name paramater :
 
-![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/burp.png)
+![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/burp.png)
 
 damn , `id` command is executed , now let's see what's files are in this directory with `ls -la`
 
 ![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/burp2.JPG)
 
 > as we can see , we have flag file , let's read it with `cat flag`
-> ![image info](https://github.com/Shakun8/BDSec-CTF-2022/blob/main/images/burp3.JPG)
+> ![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/burp3.JPG)
 
 Cool , flag : `BDSEC{Y3Y_7H1515_7H3_F146}`
 
