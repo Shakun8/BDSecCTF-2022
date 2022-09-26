@@ -63,7 +63,6 @@ Let's write something in the paramater of name.
 
 First i Tested this payload to see if it can be work : `{{7*7}}`
 
-![image info](https://github.com/Shakun8/BDSecCTF-2022/blob/main/images/3.JPG)
 
 And COOL , as we can see it worked , now let's intercept this request to burpsuite
 
